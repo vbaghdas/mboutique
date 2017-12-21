@@ -336,7 +336,7 @@ input {
     .weekly-menu-item {
         margin: 0 2.5px;
     }
-
+    
     .our-macarons-right img {
         width: 100%;
     }
@@ -352,15 +352,11 @@ input {
         padding: 4px;
     }
 
+    .weekly-menu {
+        flex-flow: row wrap;
+    }
+
     .weekly-menu-item {
-        margin: 0 .5px;
-    }
-
-    .weekly-menu-item .day {
-        font-size: 12px;
-    }
-
-    .daily-macarons img {
-        display: none;
+        margin: 10px;
     }
 }

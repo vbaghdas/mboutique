@@ -362,6 +362,17 @@ input {
         width: 100%;
     }
 
+    .gifts-parties-right {
+        max-width: 407px;
+        width: 407px;
+        margin: auto;
+    }
+
+    .gifts-parties-right img {
+        height: 100%;
+        width: 100%;
+    }
+
     .contact-left,
     .contact-middle {
         width: 85%;
@@ -399,5 +410,16 @@ input {
 
     .weekly-menu-item {
         margin: 10px;
+    }
+
+    .welcome > .container,
+    .our-macarons > .container,
+    .gifts-parties > .container {
+        width: 85%;
+    }
+
+    .gifts-parties-right {
+        max-width: 310px;
+        width: 310px;
     }
 }

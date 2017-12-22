@@ -335,6 +335,16 @@ input {
     .container {
         width: 800px;
     }
+    
+    .navbar-default .navbar-header {
+        text-align: center;
+        width: 100%
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        line-height: 20px;
+        padding: 20px;
+    }
 
     .banner {
         margin-bottom: 30px;
@@ -373,6 +383,7 @@ input {
     }
 
     .navbar-default .navbar-header {
+        text-align: left;
         padding: 10px;
     }
 

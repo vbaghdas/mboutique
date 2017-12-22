@@ -19,8 +19,6 @@
 
 8. FOOTER STYLESHEET
 
-9. MOBILE RESPONSIVE
-
 /*==========================================================
                 1. GLOBAL STYLESHEET
 ===========================================================*/
@@ -137,6 +135,10 @@ input {
     margin: 0 5px;
     height: 162px;
     width: 132px;
+}
+
+.weekly-menu-item:nth-child(8) {
+    display: none;
 }
 
 .weekly-menu-item .day {
@@ -320,106 +322,4 @@ input {
 .footer a {
     text-decoration: none;
     color: inherit;
-}
-
-/*==========================================================
-                9. Mobile Responsive
-===========================================================*/
-@media (max-width: 1920px) {
-    .container {
-        width: 1000px;
-    }
-}
-
-@media (max-width: 991px) {
-    .container {
-        width: 800px;
-    }
-    
-    .navbar-default .navbar-header {
-        text-align: center;
-        width: 100%
-    }
-
-    .navbar-default .navbar-nav > li > a {
-        line-height: 20px;
-        padding: 20px;
-    }
-
-    .banner {
-        margin-bottom: 30px;
-    }
-    
-    .welcome-left {
-        display: none;
-    }
-
-    .weekly-menu-item {
-        margin: 0 2.5px;
-    }
-    
-    .our-macarons-right img {
-        width: 100%;
-    }
-
-    .gifts-parties-right {
-        max-width: 407px;
-        width: 407px;
-        margin: auto;
-    }
-
-    .gifts-parties-right img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .contact-left,
-    .contact-middle {
-        width: 85%;
-        margin: auto;
-    }
-
-    .contact-right {
-        display: none;
-    }
-
-    .contact hr {
-        display: block;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-
-    .navbar-default .navbar-header {
-        text-align: left;
-        padding: 10px;
-    }
-
-    .navbar-default .navbar-nav > li > a {
-        font-size: 11px;
-        padding: 4px;
-    }
-
-    .weekly-menu {
-        margin-top: 0;
-        flex-flow: row wrap;
-    }
-
-    .weekly-menu-item {
-        margin: 10px;
-    }
-
-    .welcome > .container,
-    .our-macarons > .container,
-    .gifts-parties > .container {
-        width: 85%;
-    }
-
-    .gifts-parties-right {
-        max-width: 310px;
-        width: 310px;
-    }
 }

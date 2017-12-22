@@ -272,11 +272,19 @@ input {
     border: solid #eeeeee;
     text-transform: uppercase;
     height: 45px;
+    width: 50%;
+    float: right;
 }
 
 .contact-form input:nth-child(6):hover {
     background-color: #bebebe;
     border: solid #bebebe;
+    color: #fff;
+}
+
+.contact hr {
+    border-top: 2px solid #eee;
+    display: none;
 }
 
 .contact-right {
@@ -328,6 +336,10 @@ input {
     .container {
         width: 800px;
     }
+
+    .banner {
+        margin-bottom: 30px;
+    }
     
     .welcome-left {
         display: none;
@@ -340,11 +352,29 @@ input {
     .our-macarons-right img {
         width: 100%;
     }
+
+    .contact-left,
+    .contact-middle {
+        width: 85%;
+        margin: auto;
+    }
+
+    .contact-right {
+        display: none;
+    }
+
+    .contact hr {
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         width: 100%;
+    }
+
+    .navbar-default .navbar-header {
+        padding: 10px;
     }
 
     .navbar-default .navbar-nav > li > a {

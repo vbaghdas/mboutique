@@ -393,6 +393,7 @@ input {
     }
 
     .weekly-menu {
+        margin-top: 0;
         flex-flow: row wrap;
     }
 

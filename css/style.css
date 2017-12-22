@@ -63,8 +63,7 @@ input {
 
 .navbar-default .navbar-toggle {
     border-color: #fffabe;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .navbar-default .navbar-toggle:hover,

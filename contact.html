@@ -88,13 +88,13 @@
                 <hr>
                 <div class="contact-middle">
                     <h3>Contact Form</h3>
-                    <form class="contact-form" action="#" method="post">
-                        <input type="text" name="name" placeholder="name">
-                        <input type="email" name="email" placeholder="email">
-                        <input type="tel" name="phone" placeholder="phone">
-                        <input type="text" name="subject" placeholder="subject">
-                        <input type="text" name="message" placeholder="message">
-                        <input type="button" class="button"  value="send">
+                    <form id="contact-form" action="#" method="post">
+                        <input id="name" type="text" name="name" placeholder="name">
+                        <input id="email" type="email" name="email" placeholder="email">
+                        <input id="phone" type="tel" name="phone" placeholder="phone">
+                        <input id="subject" type="text" name="subject" placeholder="subject">
+                        <input id="message" type="text" name="message" placeholder="message">
+                        <input id="submit-btn" type="submit" class="button" value="send">
                     </form>
                 </div>
             </div>
@@ -146,6 +146,9 @@
 <!-- Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Form Validation -->
+<script type="javascript" src="js/contact.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 # MBoutique
 
-## Technologies: HTML5, CSS3, Bootstrap
+## Technologies: PHP, JavaScript, jQuery, HTML5, CSS3, Bootstrap
 
 ### Live Website: [MBoutique Live](http://www.vachebaghdassarian.com/mboutique)
 

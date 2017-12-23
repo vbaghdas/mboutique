@@ -4,7 +4,7 @@
 
 ===========================================================*/
  $(document).ready(function(){
-    $("#btn-submit").click(function(){
+    $("#submit-btn").click(function(){
 
         //get input field values
         var user_name = $('input[name=name]').val();

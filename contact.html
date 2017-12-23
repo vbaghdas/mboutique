@@ -89,12 +89,12 @@
                 <div class="contact-middle">
                     <h3>Contact Form</h3>
                     <form id="contact-form" method="post">
-                        <input id="name" type="text" name="name" placeholder="name">
-                        <input id="email" type="email" name="email" placeholder="email">
-                        <input id="phone" type="tel" name="phone" placeholder="phone">
-                        <input id="subject" type="text" name="subject" placeholder="subject">
-                        <input id="message" type="text" name="message" placeholder="message">
-                        <input id="submit-btn" type="submit" class="button" value="send">
+                        <input id="name" type="text" name="name" placeholder="Name" maxlenght="50">
+                        <input id="email" type="email" name="email" placeholder="Email" maxlenght="40">
+                        <input id="phone" type="tel" name="phone" placeholder="Phone" maxlenght="7">
+                        <input id="subject" type="text" name="subject" placeholder="Subject" maxlenght="30">
+                        <textarea id="message" type="text" name="message" placeholder="Message" rows="3" maxlenght="60"></textarea>
+                        <input id="submit-btn" type="submit">
                     </form>
                 </div>
             </div>
@@ -143,12 +143,32 @@
 </div>
 <!-- End Footer -->
 
+<!-- Start Modal -->
+<div id="contact-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title"></h2>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Modal -->
+
 <!-- Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- Form Validation -->
-<script type="javascript" src="js/contact.js"></script>
+<script src="js/contact.js"></script>
 
 </body>
 </html>

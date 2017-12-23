@@ -4,6 +4,7 @@
 
 ===========================================================*/
  $(document).ready(function(){
+
     $("#submit-btn").click(function(){
 
         //get input field values
@@ -18,29 +19,29 @@
         //we simply change border color to red if empty field using .css()
         var proceed = true;
         if (user_name == "" || user_name == " ") {
-            $('input[name=name]').css('border-color', '#fa225b');
+            $('input[name=name]').css('border-color', '#df5277');
             proceed = false;
         }
         if (user_email == "" || user_name == " ") {
-            $('input[name=email]').css('border-color', '#fa225b');
+            $('input[name=email]').css('border-color', '#df5277');
             proceed = false;
         }
         if (user_phone == "" || user_name == " ") {
-            $('input[name=phone]').css('border-color', '#fa225b');
+            $('input[name=phone]').css('border-color', '#df5277');
             proceed = false;
         }
         if (user_subject == "" || user_name == " ") {
-            $('input[name=subject]').css('border-color', '#fa225b');
+            $('input[name=subject]').css('border-color', '#df5277');
             proceed = false;
         }
         if (user_message == "" || user_name == " ") {
-            $('textarea[name=message]').css('border-color', '#fa225b');
+            $('textarea[name=message]').css('border-color', '#df5277');
             proceed = false;
         }
         var atpos = user_email.indexOf("@");
         var dotpos = user_email.lastIndexOf(".");
         if (atpos<1 || dotpos<atpos+2 || dotpos+2>=user_email.length) {
-            $('input[name=email]').css('border-color', '#fa225b');
+            $('input[name=email]').css('border-color', '#df5277');
             proceed = false;
         }
 
@@ -50,7 +51,7 @@
             post_data = {
                 'userName': user_name,
                 'userEmail': user_email,
-                'userMessage': user_phone,
+                'userPhone': user_phone,
                 'userMessage': user_message,
                 'userSubject': user_subject
             };
@@ -97,5 +98,13 @@
     $("#contact-form #message").click(function(){
         $("#contact-form #message").css('border-color', '');
     });
+
+    //Check for numbers on phone input
+    function requireNumbers(event) {
+        var value = String.fromCharCode(event.which);
+        var pattern = new RegExp(/^[0-9]*$/gm);
+        return pattern.test(value);
+    }
+    $('#phone').on('keypress', requireNumbers);
 
 });

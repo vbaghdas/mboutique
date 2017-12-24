@@ -97,4 +97,9 @@
         max-width: 310px;
         width: 310px;
     }
+
+    .footer img,
+    .footer span  {
+        margin-right: 5px;
+    }
 }
